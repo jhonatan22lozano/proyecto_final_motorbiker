@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Tienda de Repuestos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .admin-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            width: 300px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="login.html">Iniciar Sesión</a>
+    </nav>
+
+    <div class="admin-container">
+        <h1>Panel de Administrador</h1>
+        <p>Acceso exclusivo para la gestión de productos, usuarios y más.</p>
+
+       
+        <form action="admin_login.php" method="POST">
+
+            <label for="admin-usuario">Usuario:</label>
+            <input type="text" id="admin-usuario" name="usuario" placeholder="Introduce tu usuario" required><br>
+
+            <label for="admin-password">Contraseña:</label>
+            <input type="password" id="admin-password" name="password" placeholder="Introduce tu contraseña" required><br>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
